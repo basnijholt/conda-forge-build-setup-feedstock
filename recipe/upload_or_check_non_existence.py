@@ -13,7 +13,7 @@ import conda.config
 from conda.api import get_index
 from conda_build.metadata import MetaData
 from conda_build.build import bldpkg_path
-
+from conda_build.config import Config
 
 def built_distribution_already_exists(cli, meta, owner):
     """

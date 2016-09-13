@@ -24,7 +24,6 @@ def built_distribution_already_exists(cli, meta, owner):
     distro_name = '{}/{}.tar.bz2'.format(conda.config.subdir, meta.dist())
     try:
         # conda-build >= 2.0.0 takes a config argument
-        
         config = Config()
         fname = bldpkg_path(meta, config)
     except TypeError:
